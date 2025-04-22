@@ -4,11 +4,11 @@ function MainHero() {
     className="w-full h-[100vh] bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 relative overflow-hidden bg-center bg-cover"
     style={{ backgroundImage: 'url(./cover.png)' }}
   >
-    <div className="max-w-6xl mx-auto h-full flex flex-col md:flex-row items-center justify-between">
+    <div className="max-w-6xl ml-4 mx-auto h-full flex flex-col md:flex-row items-center justify-between">
       <div className="md:w-1/2 z-10 flex items-center h-full">
         <div>
           <p className="text-sm uppercase tracking-wider mb-4">- LOVE AWAITS HERE -</p>
-          <h1 className="text-5xl md:text-8xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Give a Paw,
             <br />
             Save a Life!

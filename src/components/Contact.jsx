@@ -3,18 +3,18 @@ import React from "react"
 function ContactSection() {
   return (
     <section className="w-full py-16 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="flex justify-center mb-4">
           <img src="./foot2.svg" className="h-12"/>
         </div>
 
         <p className="text-[#FDDF55] uppercase tracking-wider font-medium text-center mb-4">- CONTACTS -</p>
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800">
           Let's Get In Touch<span className="text-blue-500">.</span>
         </h2>
 
-        <p className="text-gray-600 text-xl font-bold text-center mb-12">
+        <p className="text-gray-600 text-lg font-bold text-center mb-12">
           Whether you're interested in adopting, donating, or simply want to learn more, don't hesitate to reach out!
         </p>
 

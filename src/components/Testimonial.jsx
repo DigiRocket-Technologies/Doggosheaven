@@ -4,7 +4,7 @@ import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 function TestimonialsSection() {
-  // Testimonials data
+  
   const testimonials = [
     {
       id: 1,
@@ -38,10 +38,10 @@ function TestimonialsSection() {
     },
   ]
 
-  // State to track current testimonial
+  
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  // Handle navigation
+
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1))
   }
@@ -61,20 +61,20 @@ function TestimonialsSection() {
          </div>
         </div>
 
-        <p className="text-amber-500 uppercase tracking-wider font-medium mb-4">- SUCCESS STORIES -</p>
+        <p className="text-amber-500 text-xs uppercase tracking-wider font-medium mb-4">- SUCCESS STORIES -</p>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
           Loyal Hearts, Forever Homes<span className="text-amber-500">.</span>
         </h2>
 
-        <p className="text-gray-600 text-xl font-bold mb-12">
+        <p className="text-gray-600 text-lg font-bold mb-12">
           Read the heartwarming stories of those who gave a second chance to animals in need.
         </p>
 
         <div className="relative">
         <div className="relative flex flex-col items-center">
 
-{/* Left button */}
+
 <button
   onClick={goToPrevious}
   className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 hover:bg-amber-500 hover:border-amber-500 hover:text-white transition-colors"
@@ -83,8 +83,8 @@ function TestimonialsSection() {
   <ChevronLeft className="w-6 h-6" />
 </button>  
 
-{/* Testimonial content */}
-<div className="flex flex-col items-center px-12"> {/* added horizontal padding to prevent overlap with buttons */}
+
+<div className="flex flex-col items-center px-12">
   <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
     <img
       src={currentTestimonial.image || "/placeholder.svg"}
@@ -104,7 +104,7 @@ function TestimonialsSection() {
 
   <p className="text-[#489CBE] font-bold mb-8">{currentTestimonial.date}</p>
 
-  {/* Indicator dots */}
+ 
   <div className="flex justify-center mt-6 gap-2">
     {testimonials.map((_, index) => (
       <button
@@ -117,7 +117,7 @@ function TestimonialsSection() {
   </div>
 </div>
 
-{/* Right button */}
+
 <button
   onClick={goToNext}
   className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 hover:bg-amber-500 hover:border-amber-500 hover:text-white transition-colors"

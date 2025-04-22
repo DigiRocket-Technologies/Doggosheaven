@@ -2,10 +2,9 @@ import React, { useState } from "react"
 import { Weight } from 'lucide-react'
 
 function AdoptionSection() {
-  // State to track the active tab
+
   const [activeTab, setActiveTab] = useState("dogs")
 
-  // Mock data for different pet types
   const pets = {
     dogs: [
       {
@@ -96,14 +95,14 @@ function AdoptionSection() {
     ]
   }
 
-  // Function to handle tab changes
+
   const handleTabChange = (tab) => {
     setActiveTab(tab)
   }
 
   return (
     <section className="w-full py-16 px-6 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="flex justify-center mb-4">
          <div>
           <img src="./foot.svg" className="h-16"/>
@@ -112,11 +111,11 @@ function AdoptionSection() {
 
         <p className="text-amber-500 uppercase tracking-wider font-medium text-center mb-4">- ADOPT NOW -</p>
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800">
           Every Animal Deserves a Loving Home<span className="text-blue-500">.</span>
         </h2>
 
-        <p className="text-gray-600 text-xl text-center mb-12">
+        <p className="text-gray-600 text-lg text-center mb-12">
           Adoption is a lifelong promise of love and care — open your heart and give a homeless pet a forever home.
         </p>
 
@@ -134,12 +133,7 @@ function AdoptionSection() {
             >
               Cats
             </button>
-            <button 
-              className={`px-8 py-4 font-medium ${activeTab === 'bunnies' ? 'text-gray-800 border-b-2 border-blue-500' : 'text-[#aba9a9]'}`}
-              onClick={() => handleTabChange('bunnies')}
-            >
-              Bunnies
-            </button>
+          
           </div>
         </div>
 

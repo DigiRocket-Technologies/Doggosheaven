@@ -64,12 +64,12 @@ function GallerySection() {
   const currentImages = getCurrentSlideImages()
 
   return (
-<section className="w-full py-12 px-6 bg-gray-100">
+<section className="w-full py-6 px-4 bg-gray-100">
   <div className="max-w-8xl mx-auto">
    
 
     {/* Fixed height applied here */}
-    <div className="flex w-full space-x-6 h-[500px]">
+    <div className="flex w-full space-x-6 h-[350px]">
       {/* Left large image */}
       <div className="w-[33%] h-full">
         <img

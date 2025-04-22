@@ -1,19 +1,19 @@
 function HelpSection() {
     return (
-      <section className="w-full py-28 bg-[#94699c] relative">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section className="py-24 px-6 bg-[#94699c] relative">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               Lend a Paw, Change a Life<span className="text-amber-500">.</span>
             </h2>
   
-            <p className="text-white text-lg font-bold mb-10">
+            <p className="text-white text-sm font-bold ">
               Join us in making a difference today. Your support helps rescue animals, provide care, and give them the
               chance to find loving homes.
             </p>
-  
+
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-white">How You Can Help:</h3>
+              <h3 className="text-lg font-bold text-white">How You Can Help:</h3>
   
               <div className="flex items-start gap-3">
                 <div className="min-w-4 mt-1">
@@ -21,7 +21,7 @@ function HelpSection() {
                 </div>
                 <div className="flex">
                   <p className="font-bold text-white">Adopt a Pet</p>
-                  <p className="text-white">– Open your heart and home to a pet in need.</p>
+                  <p className="text-white text-sm">– Open your heart and home to a pet in need.</p>
                 </div>
               </div>
   
@@ -31,7 +31,7 @@ function HelpSection() {
                 </div>
                 <div className="flex">
                   <p className="font-bold text-white">Donate</p>
-                  <p className="text-white">– Your donation directly funds veterinary care, food, and shelter.</p>
+                  <p className="text-white text-sm">– Your donation directly funds veterinary care, food, and shelter.</p>
                 </div>
               </div>
   
@@ -41,7 +41,7 @@ function HelpSection() {
                 </div>
                 <div className="flex ">
                   <p className="font-bold text-white">Volunteer</p>
-                  <p className="text-white">– Give your time to make a meaningful impact.</p>
+                  <p className="text-white text-sm">– Give your time to make a meaningful impact.</p>
                 </div>
               </div>
             </div>
