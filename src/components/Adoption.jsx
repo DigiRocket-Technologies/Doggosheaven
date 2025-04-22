@@ -71,38 +71,7 @@ function AdoptionSection() {
         description: "Oliver is a laid-back cat who loves attention and belly rubs.",
       },
     ],
-    bunnies: [
-      {
-        id: 1,
-        name: "Thumper",
-        image:
-          "https://pets-shelter.sites.motocms.com/res/673338e1d51e2c8555b90485/673b0bdbece0e84849bbebe0_optimized_1400_c1138x1138-262x85",
-        weight: "4",
-        age: "2",
-        treat: "Carrot sticks",
-        description: "Thumper is an energetic bunny who loves to hop around and explore.",
-      },
-      {
-        id: 2,
-        name: "Cotton",
-        image:
-          "https://pets-shelter.sites.motocms.com/res/673338e1d51e2c8555b90485/673b0be4531e6a35a064fc5f_optimized_1356_c1140x1140-55x0",
-        weight: "3",
-        age: "1",
-        treat: "Apple slices",
-        description: "Cotton is a fluffy bunny who enjoys cuddling and being petted.",
-      },
-      {
-        id: 3,
-        name: "Hopper",
-        image:
-          "https://pets-shelter.sites.motocms.com/res/673338e1d51e2c8555b90485/673b0bf1ece0e84849bbec3d_optimized_1311_c1140x1140-8x0",
-        weight: "5",
-        age: "3",
-        treat: "Lettuce leaves",
-        description: "Hopper is a friendly bunny who gets along well with other pets.",
-      },
-    ],
+ 
   }
 
   const handleTabChange = (tab) => {
@@ -142,12 +111,7 @@ function AdoptionSection() {
             >
               Cats
             </button>
-            <button
-              className={`px-4 sm:px-8 py-3 sm:py-4 font-medium ${activeTab === "bunnies" ? "text-gray-800 border-b-2 border-blue-500" : "text-[#aba9a9]"}`}
-              onClick={() => handleTabChange("bunnies")}
-            >
-              Bunnies
-            </button>
+           
           </div>
         </div>
 
