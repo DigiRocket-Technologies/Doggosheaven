@@ -18,7 +18,7 @@ function App() {
       <AdoptionSection />
       <AboutSection />
       <HelpSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <TestimonialsSection />
       
       <GallerySection />
