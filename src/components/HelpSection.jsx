@@ -48,12 +48,11 @@ function HelpSection() {
           </div>
 
           <div className="mt-10">
-            <a
-              href="#"
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium px-8 py-3 rounded-full transition-colors"
-            >
-              Contact Us
-            </a>
+          
+               <button className="text-[white] py-4 px-8 cursor-pointer bg-blue-500 font-bold rounded-l-full rounded-tr-full">
+                  <a>Contact us</a>
+              </button>
+         
           </div>
         </div>
 

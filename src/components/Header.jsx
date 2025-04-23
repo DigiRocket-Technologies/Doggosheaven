@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Facebook, Instagram, Youtube, Twitter, Menu, X } from "lucide-react";
 
-function Header() {
+function Header({onPetClick, onAboutClick, onHelpClick, onTestimonialClick, onContactClick}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -17,7 +17,7 @@ function Header() {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
-    closeMenu(); // Close menu after clicking a navigation link
+    closeMenu();
   };
 
   return (
@@ -33,35 +33,32 @@ function Header() {
           </div>
         </div>
 
-        {/* Desktop Navigation */}
+     
         <nav className="hidden md:flex text-xs items-center gap-4 lg:gap-8">
-          <a href="#pets" onClick={(e) => { e.preventDefault(); scrollToSection('pets'); }} 
+          <a href="#pets" onClick={onPetClick}
              className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
             Pets
           </a>
-          <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} 
+          <a href="#about" onClick={onAboutClick}
              className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
             About Us
           </a>
-          <a href="#help" onClick={(e) => { e.preventDefault(); scrollToSection('help'); }} 
+          <a href="#help" onClick={onHelpClick}
              className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
             How You Can Help
           </a>
-          <a href="#team" onClick={(e) => { e.preventDefault(); scrollToSection('team'); }} 
-             className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
-            Team
-          </a>
-          <a href="#testimonials" onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); }} 
+         
+          <a href="#testimonials" onClick={onTestimonialClick} 
              className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
             Testimonials
           </a>
-          <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} 
+          <a href="#contact" onClick={onContactClick}
              className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
             Contact us
           </a>
         </nav>
 
-        {/* Social Media Icons - Hidden on mobile */}
+     
         <div className="hidden md:flex items-center gap-3">
           <a href="#" className="bg-[#489CBE] hover:bg-blue-600  text-white p-2 rounded-md transition-colors">
             <Facebook size={15} />
@@ -77,7 +74,7 @@ function Header() {
           </a>
         </div>
 
-        {/* Hamburger Menu Button - Visible only on mobile */}
+     
         <button 
           className="md:hidden text-gray-700 p-2"
           onClick={toggleMenu}
@@ -100,27 +97,24 @@ function Header() {
           </button>
           
           <div className="flex flex-col items-center gap-6 p-4">
-            <a href="#pets" onClick={(e) => { e.preventDefault(); scrollToSection('pets'); }} 
+            <a href="#pets" onClick={onPetClick} 
                className="text-gray-700 hover:text-[#489CBE] text-lg">
               Pets
             </a>
-            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} 
+            <a href="#about" onClick={onAboutClick}
                className="text-gray-700 hover:text-[#489CBE] text-lg">
               About Us
             </a>
-            <a href="#help" onClick={(e) => { e.preventDefault(); scrollToSection('help'); }} 
+            <a href="#help" onClick={onHelpClick} 
                className="text-gray-700 hover:text-[#489CBE] text-lg">
               How You Can Help
             </a>
-            <a href="#team" onClick={(e) => { e.preventDefault(); scrollToSection('team'); }} 
-               className="text-gray-700 hover:text-[#489CBE] text-lg">
-              Team
-            </a>
-            <a href="#testimonials" onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); }} 
+         
+            <a href="#testimonials" onClick={onTestimonialClick} 
                className="text-gray-700 hover:text-[#489CBE] text-lg">
               Testimonials
             </a>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} 
+            <a href="#contact" onClick={onContactClick} 
                className="text-gray-700 hover:text-[#489CBE] text-lg">
               Contact us
             </a>

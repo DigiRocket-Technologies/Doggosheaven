@@ -8,14 +8,14 @@ function MainHero() {
 
   return (
     <section
-      className="w-full pb-4 h-[90vh] md:h-[90vh] lg:h-[100vh] bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 md:px-16 relative overflow-hidden bg-center bg-cover"
+      className="w-full pb-4 h-[90vh] md:h-[100vh] bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 md:px-16 relative overflow-hidden bg-center bg-cover"
       style={{ backgroundImage: "url(./cover.png)" }}
     >
       <div className="max-w-6xl mx-auto h-full flex flex-col md:flex-row items-center justify-center md:justify-between">
-        <div className="md:w-1/2 z-10 flex items-center h-full pt-16 md:pt-0">
+        <div className="md:w-1/2 z-10 flex items-center h-full ">
           <div>
             <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4">- LOVE AWAITS HERE -</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Give a Paw,
               <br />
               Save a Life!
@@ -31,7 +31,7 @@ function MainHero() {
         </div>
       </div>
 
-      {/* Popup */}
+    
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
           {/* Overlay */}

@@ -9,21 +9,42 @@ import GallerySection from "./components/Gallery"
 import Contact from "./components/Contact"
 import StatsSection from "./components/Stats"
 import Footer from "./components/Footer"
+import Vedio from "./components/Vedio"
+import { useRef } from "react"
 
 function App() {
+
+  const petRef = useRef(null);
+  const aboutRef = useRef(null);
+  const helpRef = useRef(null);
+  const contactRef = useRef(null);
+  const testimonialRef = useRef(null);
+
+  const scrollToSection = (section) => {
+    section?.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <main className="min-h-screen flex flex-col">
-      <Header />
-      <MainHero />
-      <AdoptionSection />
-      <AboutSection />
-      <HelpSection />
-      {/* <TeamSection /> */}
-      <TestimonialsSection />
-      
-      <GallerySection />
+      <Header 
+        onPetClick={() => scrollToSection(petRef)}
+        onAboutClick={() => scrollToSection(aboutRef)}
+        onHelpClick={() => scrollToSection(helpRef)}
+        onTestimonialClick={() => scrollToSection(testimonialRef)}
+        onContactClick={() => scrollToSection(contactRef)}
+      />
+      <div> <MainHero /></div>
      
-      <Contact/>
+     <div ><AdoptionSection /></div> 
+      <div ref={aboutRef}><AboutSection /></div>
+      <div ref={helpRef}><HelpSection /></div>
+  
+     <div ><Vedio/></div> 
+     <div ref={testimonialRef}><TestimonialsSection /></div> 
+      
+      <div ref={petRef}><GallerySection /></div>
+     
+     <div ref={contactRef}><Contact/></div> 
       <StatsSection/>
       <Footer/>
     </main>

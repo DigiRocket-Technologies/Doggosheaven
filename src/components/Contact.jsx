@@ -19,11 +19,17 @@ function ContactSection() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-gray-100 rounded-lg overflow-hidden">
-            <div className="h-80 flex items-center justify-center">
-              <p className="text-gray-500">Map will be displayed here</p>
-            </div>
-          </div>
+        
+          <div className="google-maps relative w-full pt-[56.25%]"> 
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.9365510154903!2d76.9700345088445!3d28.39098429491173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d003aac66ab%3A0x32a6dd785b4cbc4f!2sDoggos%20Heaven!5e0!3m2!1sen!2sin!4v1745414318175!5m2!1sen!2sin"  loading="lazy"
+        className="absolute top-0 left-0 w-full h-full border-0"
+          allowFullScreen
+       
+          title="Doggos Heaven"
+        ></iframe>
+      </div>
+        
 
           <div>
   <form className="space-y-6 text-lg">
@@ -31,32 +37,32 @@ function ContactSection() {
       <input
         type="text"
         placeholder="Enter your full name*"
-        className="w-full px-4 py-3 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-4 py-3 rounded-l-full rounded-tr-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
     </div>
     <div>
       <input
         type="tel"
         placeholder="Enter your phone number*"
-        className="w-full px-4 py-3 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-4 py-3 rounded-l-full rounded-tr-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
     </div>
     <div>
       <input
         type="email"
         placeholder="Enter your e-mail*"
-        className="w-full px-4 py-3 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-4 py-3 rounded-l-full rounded-tr-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
     </div>
     <div>
       <textarea
         placeholder="Type your message"
         rows="4"
-        className="w-full px-4 py-3 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-8 py-3 rounded-l-full rounded-tr-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       ></textarea>
     </div>
     <div>
-      <button className="w-full bg-[#e7c531] rounded-2xl hover:bg-amber-600 text-white font-medium py-3 px-4  transition-colors">
+      <button className="w-full bg-[#e7c531] rounded-l-full rounded-tr-full hover:bg-amber-600 text-white font-medium py-3 px-4  transition-colors">
         Request a Quote
       </button>
     </div>
