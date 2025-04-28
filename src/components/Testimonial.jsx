@@ -6,25 +6,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 function TestimonialsSection() {
   
   const testimonials = [
+
     {
       id: 1,
-      name: "John & Sarah Davis",
+      name: "Gaurav sharma",
       image:
-        "https://pets-shelter.sites.motocms.com/res/673338e1d51e2c8555b90485/673b0ed8995899838cc53392_optimized_343_c343x343-0x0",
-      petAdopted: "Max (Dog)",
+        "./kaju.jpeg",
+      petAdopted: "Kaju (Cat)",
       quote:
-        "Adopting Max was the best decision we ever made! He's brought so much joy into our lives, and we can't imagine our home without him. Max was shy at first, but with patience and love, he's opened up and become the most loyal and loving dog. He greets us every day with excitement and tail wags, and we feel so lucky to have him. He's become part of our family, and seeing him happy makes us the happiest family in the world.",
-      date: "December 15, 2024",
+        "This place is a true heaven for doggos. The boarding area and park is very nice, ensuring every pet feels comfortable and safe during their stay. Place also has a vet to look after the pups as needed. What truly sets this place apart is the dedicated and caring staff who treat every animal like family, providing personalized attention and love.During my visit, I was deeply impressed by their commitment to animal welfare and decided to adopt a pet. That’s when I met Kajju. The adoption process was smooth and well-organized, with the staff ensuring Kajju was the perfect match for me. He came home healthy and well-socialized. Would recommend 10/10",
     },
     {
       id: 2,
-      name: "Emily Johnson",
+      name: "Swati Agarwal",
       image:
-        "https://pets-shelter.sites.motocms.com/res/673338e1d51e2c8555b90485/673b0ed8995899838cc53392_optimized_343_c343x343-0x0",
-      petAdopted: "Luna (Cat)",
+        "./o1.png",
+      petAdopted: "Rani (Dog)",
       quote:
-        "Luna has completely transformed our home with her playful energy and affectionate nature. She was so timid when we first brought her home, but now she's the queen of the house! Every evening she curls up on our laps while we watch TV, and her purring is the most soothing sound. Adopting her was one of the best decisions we've ever made.",
-      date: "November 3, 2024",
+        "I never expected to find my new best friend online, but that's exactly what happened! While browsing, I stumbled upon an adorable litter of puppies in Delhi. Despite being told they were only available for local adoption, I couldn't resist asking Sayam if he'd make an exception for me in Dehradun.To my delight, Sayam agreed to deliver a puppy to me after a brief introduction. I requested a shy and reserved female pup, and Sayam assured me that the puppies were well-cared for and up-to-date on their vaccinations.What struck me most was Sayam's unwavering dedication to finding the puppies a loving home. When he couldn't find a suitable transporter, he selflessly took time out of his busy schedule to personally deliver Rani to Dehradun.I'm forever grateful for Sayam's compassion and commitment to animal welfare. His kindness has brought immense joy to my life, and I'm thrilled to welcome Rani, my new furry companion!Fast-forward to today, Rani has blossomed into a loving and playful young girl who adores her family. My son has found a partner-in-crime, and they spend their days playing and fighting. We recently celebrated Kukur Tihar at Rani's grandfather's home, and I've shared a heartwarming photo from that special day.",
     },
     {
       id: 3,

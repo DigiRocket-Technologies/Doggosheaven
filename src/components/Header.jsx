@@ -34,44 +34,37 @@ function Header({onPetClick, onAboutClick, onHelpClick, onTestimonialClick, onCo
         </div>
 
      
-        <nav className="hidden md:flex text-xs items-center gap-4 lg:gap-8">
-          <a href="#pets" onClick={onPetClick}
-             className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
+        <nav className="hidden md:flex text-xs  items-center gap-4 lg:gap-8">
+          <button  onClick={onPetClick}
+             className="text-gray-500 cursor-pointer hover:text-[#489CBE] underline underline-offset-4">
             Pets
-          </a>
-          <a href="#about" onClick={onAboutClick}
-             className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
+          </button>
+          <button  onClick={onAboutClick}
+             className="text-gray-500 cursor-pointer hover:text-[#489CBE] underline underline-offset-4">
             About Us
-          </a>
-          <a href="#help" onClick={onHelpClick}
-             className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
+          </button>
+          <button  onClick={onHelpClick}
+             className="text-gray-500 cursor-pointer hover:text-[#489CBE] underline underline-offset-4">
             How You Can Help
-          </a>
+          </button>
          
-          <a href="#testimonials" onClick={onTestimonialClick} 
-             className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
+          <button onClick={onTestimonialClick} 
+             className="text-gray-500 cursor-pointer hover:text-[#489CBE] underline underline-offset-4">
             Testimonials
-          </a>
-          <a href="#contact" onClick={onContactClick}
-             className="text-gray-500 hover:text-[#489CBE] underline underline-offset-4">
+          </button>
+          <button  onClick={onContactClick}
+             className="text-gray-500 cursor-pointer hover:text-[#489CBE] underline underline-offset-4">
             Contact us
-          </a>
+          </button>
         </nav>
 
      
         <div className="hidden md:flex items-center gap-3">
-          <a href="#" className="bg-[#489CBE] hover:bg-blue-600  text-white p-2 rounded-md transition-colors">
-            <Facebook size={15} />
-          </a>
-          <a href="#" className="bg-[#489CBE] hover:bg-blue-600 text-white p-2 rounded-md transition-colors">
+         
+          <a href="https://www.instagram.com/doggosheaven_petresort/" target="_blank" className="bg-[#489CBE] hover:bg-blue-600 text-white p-2 rounded-md transition-colors">
             <Instagram size={15} />
           </a>
-          <a href="#" className="bg-[#489CBE] hover:bg-blue-600 text-white p-2 rounded-md transition-colors">
-            <Youtube size={15} />
-          </a>
-          <a href="#" className="bg-[#489CBE] hover:bg-blue-600 text-white p-2 rounded-md transition-colors">
-            <Twitter size={15} />
-          </a>
+         
         </div>
 
      

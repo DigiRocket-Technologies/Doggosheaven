@@ -11,6 +11,7 @@ import StatsSection from "./components/Stats"
 import Footer from "./components/Footer"
 import Vedio from "./components/Vedio"
 import { useRef } from "react"
+import InstagramReelsGrid from "./components/Reels"
 
 function App() {
 
@@ -21,7 +22,10 @@ function App() {
   const testimonialRef = useRef(null);
 
   const scrollToSection = (section) => {
-    section?.current?.scrollIntoView({ behavior: 'smooth' });
+    if(section.current){
+      section?.current?.scrollIntoView({behavior:'smooth'});
+    }
+  
   };
 
   return (
@@ -37,6 +41,7 @@ function App() {
      
      <div ><AdoptionSection /></div> 
       <div ref={aboutRef}><AboutSection /></div>
+      <InstagramReelsGrid/>
       <div ref={helpRef}><HelpSection /></div>
   
      <div ><Vedio/></div> 

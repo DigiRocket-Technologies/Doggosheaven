@@ -2,9 +2,10 @@
 
 import { Plus, Minus } from "lucide-react"
 import { useState } from "react"
+import { forwardRef } from "react"
 
-function AboutSection() {
-  const [openIndex, setOpenIndex] = useState(null)
+const AboutSection = forwardRef((props, ref) => {
+  const [openIndex, setOpenIndex] = useState(null);
 
   const items = [
     {
@@ -20,14 +21,14 @@ function AboutSection() {
       title: "Building Loving Connections",
       content: "We connect pets with loving families. Our goal is lifelong, heartwarming companionships.",
     },
-  ]
+  ];
 
   const toggleItem = (index) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
-    <section className="w-full bg-white">
+    <section ref={ref} className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-18 items-center">
         <div className="h-full w-full">
           <img
@@ -75,8 +76,10 @@ function AboutSection() {
         </div>
       </div>
     </section>
-  )
-}
+  );
+});
+
+
 
 export default AboutSection
 

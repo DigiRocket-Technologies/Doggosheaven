@@ -10,8 +10,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm mb-6">
-              Join us in building a compassionate world where every pet is valued, nurtured, and finds a place to call
-              their forever home.
+            We provide 27x7 help for your Furry companions so that you have a peace of mind!
             </p>
           </div>
 
@@ -61,7 +60,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="w-full md:w-[30%]">
+            <div className="w-full md:w-[40%]">
               <ul className="space-y-4">
                 <li className="flex items-center">
                   <div className="text-yellow-500 mr-3">
@@ -80,7 +79,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <span>+1 (234) 567 89 00</span>
+                  <span>08448461071</span>
                 </li>
                 <li className="flex items-center">
                   <div className="text-yellow-500 mr-3">
@@ -99,7 +98,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <span>shelter.pets@email.com</span>
+                  <span>help@doggosheaven.org</span>
                 </li>
                 <li className="flex items-center">
                   <div className="text-yellow-500 mr-3">
@@ -124,7 +123,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <span>Office in London - 36 Regent St.</span>
+                  <span>Block J, VATIKA INDIA NEXT, Plot 11, near Vatika V'lante, Sector 83, Gurugram, Haryana 122004</span>
                 </li>
               </ul>
             </div>
@@ -133,7 +132,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between border-t-2 border-gray-300 items-center pt-4">
-          <div className="text-gray-300 font-bold text-xs mb-2 md:mb-0">© CREATED BY</div>
+          <div className="text-gray-300 font-bold text-xs mb-2 md:mb-0">© CREATED BY Doggo's Heaven</div>
           <div className="text-gray-300 font-bold text-xs">ALL RIGHTS RESERVED</div>
         </div>
       </div>
