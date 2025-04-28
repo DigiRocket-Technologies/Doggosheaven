@@ -48,6 +48,7 @@ function App() {
      <div ref={testimonialRef}><TestimonialsSection /></div> 
       
       <div ref={petRef}><GallerySection /></div>
+      <TeamSection/>
      
      <div ref={contactRef}><Contact/></div> 
       <StatsSection/>

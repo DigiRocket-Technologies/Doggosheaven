@@ -15,14 +15,14 @@ function HelpSection() {
 
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-white">How You Can Help:</h3>
-
+            <p className="text-lg font-bold text-white">Three are three ways you can bring positive change in the lives of our cute buddies:</p>
             <div className="flex items-start gap-3">
               <div className="min-w-4 mt-1">
                 <div className="w-2 h-2 rounded-full bg-white"></div>
               </div>
               <div className="flex flex-col sm:flex-row">
-                <p className="font-bold text-white mr-1">Adopt a Pet</p>
-                <p className="text-white text-sm">– Open your heart and home to a pet in need.</p>
+                <p className="font-bold text-white mr-1">	Walk-in our facility and take home the bundle of joy that boops you back</p>
+                
               </div>
             </div>
 
@@ -31,8 +31,8 @@ function HelpSection() {
                 <div className="w-2 h-2 rounded-full bg-white"></div>
               </div>
               <div className="flex flex-col sm:flex-row">
-                <p className="font-bold text-white mr-1">Donate</p>
-                <p className="text-white text-sm">– Your donation directly funds veterinary care, food, and shelter.</p>
+                <p className="font-bold text-white mr-1">Sponsor a doggo or two and be their financial support.</p>
+                
               </div>
             </div>
 
@@ -41,8 +41,8 @@ function HelpSection() {
                 <div className="w-2 h-2 rounded-full bg-white"></div>
               </div>
               <div className="flex flex-col sm:flex-row">
-                <p className="font-bold text-white mr-1">Volunteer</p>
-                <p className="text-white text-sm">– Give your time to make a meaningful impact.</p>
+                <p className="font-bold text-white mr-1">Contribute one time or each month to help us run the facility.</p>
+               
               </div>
             </div>
           </div>

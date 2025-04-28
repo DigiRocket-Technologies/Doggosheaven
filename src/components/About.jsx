@@ -50,9 +50,7 @@ const AboutSection = forwardRef((props, ref) => {
           <p className="text-gray-600 text-base md:text-lg mb-6">Our love for animals drives everything we do.</p>
 
           <p className="text-gray-400 text-base md:text-lg mb-8">
-            We care about pets because we see their unique personalities, the joy they bring, and their unwavering
-            loyalty. Every animal deserves a chance to live a happy, healthy life, surrounded by love. Our mission is to
-            rescue, protect, and find forever homes for these animals, giving them the second chance they truly deserve.
+          Dogs are man’s best friend. And we are theirs. Started with the aim of providing support to paw-parents, now we are on a mission to make every dog meet their hooman(s). A humble abode that accommodates dogs of all breeds facilitates well being of dogs and takes care of their needs.
           </p>
 
           <div className="space-y-4">

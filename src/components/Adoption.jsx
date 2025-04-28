@@ -10,19 +10,19 @@ function AdoptionSection() {
     dogs: [
       {
         id: 1,
-        name: "Rocky",
+        name: "Kaju",
         image:
-          "https://pets-shelter.sites.motocms.com/res/673338e1d51e2c8555b90485/673b0bb0550232c45440b223_optimized_1140_c1140x1140-0x0",
+          "./kaju.jpeg",
         weight: "75",
         age: "4",
         treat: "Chicken treats",
-        description: "Rocky is always ready for an adventure and loves being around people.",
+        description: "Kaju is always ready for an adventure and loves being around people.",
       },
       {
         id: 2,
-        name: "Bella",
+        name: "Rani",
         image:
-          "https://pets-shelter.sites.motocms.com/res/673338e1d51e2c8555b90485/673b0bba531e6a35a064fbfc_optimized_1219_c1140x1140-63x21",
+          "./rani.jpeg",
         weight: "20",
         age: "5",
         treat: "Salmon snacks",
@@ -94,7 +94,7 @@ function AdoptionSection() {
         </h2>
 
         <p className="text-gray-600 text-base md:text-lg text-center mb-8 md:mb-12">
-          Adoption is a lifelong promise of love and care — open your heart and give a homeless pet a forever home.
+          Let us make our house a home: Bring a doggo and make it whole.
         </p>
 
         <div className="border-b border-[#aba9a9] mb-8 md:mb-12">
@@ -118,9 +118,16 @@ function AdoptionSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {pets[activeTab].map((pet) => (
             <div key={pet.id} className="bg-white overflow-hidden shadow-sm">
-              <div className="p-4">
-                <img src={pet.image || "/placeholder.svg"} alt={pet.name} className="w-full h-auto object-cover" />
-              </div>
+            <div className="p-4">
+  <div className="w-full h-62 overflow-hidden">
+    <img
+      src={pet.image || "/placeholder.svg"}
+      alt={pet.name}
+      className="w-full h-auto object-cover object-top"
+    />
+  </div>
+</div>
+
               <div className="p-4">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">{pet.name}</h3>
                 <div className="w-12 md:w-14 h-1 bg-[#489CBE] mb-4"></div>

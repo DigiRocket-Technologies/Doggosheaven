@@ -8,6 +8,9 @@ export default function InstagramReelsGrid() {
       title: "Sunset in Bali",
       link: "https://www.instagram.com/p/DIgTlbASpnP/",
       hashtags: "#travel #bali #sunset",
+      thumbnail: "r1.png",
+      views: "1.2M",
+      likes: "87K",
       isLoading: true
     },
     {
@@ -15,6 +18,9 @@ export default function InstagramReelsGrid() {
       title: "Mountain hiking adventure",
       link: "https://www.instagram.com/reel/DIVxsuNS_vY/",
       hashtags: "#hiking #adventure #nature",
+      thumbnail: "r2.png",
+      views: "456K",
+      likes: "32K",
       isLoading: true
     },
     {
@@ -22,6 +28,9 @@ export default function InstagramReelsGrid() {
       title: "Street food tour",
       link: "https://www.instagram.com/doggosheaven_petresort/reel/DHxe7uEylr3/",
       hashtags: "#food #streetfood #foodie",
+      thumbnail: "r3.png",
+      views: "789K",
+      likes: "45K",
       isLoading: true
     },
     {
@@ -29,6 +38,9 @@ export default function InstagramReelsGrid() {
       title: "Ocean diving",
       link: "https://www.instagram.com/p/DHc7DL9yO5_/",
       hashtags: "#diving #ocean #marine",
+      thumbnail: "r4.png",
+      views: "567K",
+      likes: "41K",
       isLoading: true
     },
     {
@@ -36,6 +48,9 @@ export default function InstagramReelsGrid() {
       title: "Tokyo night market",
       link: "https://www.instagram.com/p/DGM-nLYS6Q0/",
       hashtags: "#tokyo #japan #travel",
+      thumbnail: "r5.png",
+      views: "892K",
+      likes: "63K",
       isLoading: true
     },
     {
@@ -43,8 +58,13 @@ export default function InstagramReelsGrid() {
       title: "Safari adventure",
       link: "https://www.instagram.com/p/DFNVEVQPHEQ/",
       hashtags: "#safari #wildlife #africa",
+      thumbnail: "r6.png",
+      views: "723K",
+      likes: "52K",
       isLoading: true
     },
+  
+   
   ]);
 
   // Simulate loading thumbnails (in a real app, this would fetch actual thumbnails)
@@ -69,15 +89,7 @@ export default function InstagramReelsGrid() {
     <div className="bg-gray-50 min-h-screen">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 p-4">
-        <div className="flex justify-between items-center">
-          <a 
-            href="https://www.instagram.com/your_username/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-blue-500 flex items-center"
-          >
-          </a>
-        </div>
+      
       </header>
 
       {/* Main content */}
@@ -117,39 +129,35 @@ export default function InstagramReelsGrid() {
               rel="noopener noreferrer" 
               className="block relative aspect-[14/16] rounded overflow-hidden group"
             >
-              {/* Video Thumbnail Placeholder */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${getGradientColor(reel.id)} transition-opacity duration-300 ${reel.isLoading ? 'opacity-50' : 'opacity-100'}`}>
-                {reel.isLoading && (
+              {/* Video Thumbnail */}
+              {reel.isLoading ? (
+                <div className={`absolute inset-0 bg-gradient-to-br ${getGradientColor(reel.id)}`}>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                   </div>
-                )}
-              </div>
+                </div>
+              ) : (
+                <img 
+                  src={reel.thumbnail} 
+                  alt={reel.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              )}
               
               {/* Vignette overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div> */}
               
               <div className="absolute inset-0 flex flex-col">
                 <div className="flex-grow flex items-center justify-center">
                   <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-30 backdrop-blur-sm">
-                    <Play className="h-6 w-6 text-white" fill="white" />
+                    <Play className="h-6 w-6 text-black" fill="white" />
                   </div>
                 </div>
                 
-                <div className="p-3">
-                  <h3 className="text-sm font-medium text-white truncate">{reel.title}</h3>
-                  <p className="text-xs text-gray-200 truncate">{reel.hashtags}</p>
-                </div>
+                
               </div>
               
-              {/* Hover effect */}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-200 flex items-center justify-center">
-                <div className="transform scale-100 group-hover:scale-110 transition-transform duration-200">
-                  <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-50 backdrop-blur-sm">
-                    <Play className="h-8 w-8 text-white" fill="white" />
-                  </div>
-                </div>
-              </div>
+           
             </a>
           ))}
         </div>

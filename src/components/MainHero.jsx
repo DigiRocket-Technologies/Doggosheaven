@@ -16,12 +16,12 @@ function MainHero() {
           <div>
             <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4">- LOVE AWAITS HERE -</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
-              Give a Paw,
+             Finding hoomans 
               <br />
-              Save a Life!
+              for  furry paws!
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8">
-              Bringing warmth and companionship into every home.
+            Add a doggo to your family photo.
             </p>
             <button className="text-[black] cursor-pointer bg-white font-bold rounded-l-full px-10 py-2 rounded-tr-full" onClick={openPopup}>
                         Donate

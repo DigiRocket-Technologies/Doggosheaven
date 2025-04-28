@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Facebook, Instagram, Youtube, Twitter, Menu, X } from "lucide-react";
+import { Facebook, Instagram,MapPin , Menu, X } from "lucide-react";
+
 
 function Header({onPetClick, onAboutClick, onHelpClick, onTestimonialClick, onContactClick}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ function Header({onPetClick, onAboutClick, onHelpClick, onTestimonialClick, onCo
         <div className="flex items-center gap-4">
           <div className="relative overflow-hidden">
             <img
-              src="./do.png"
+              src="./logoBlack.png"
               alt="Paws & Tails Logo"
               className="object-cover w-auto h-[30px] lg:h-[40px]"
             />
@@ -64,6 +65,9 @@ function Header({onPetClick, onAboutClick, onHelpClick, onTestimonialClick, onCo
           <a href="https://www.instagram.com/doggosheaven_petresort/" target="_blank" className="bg-[#489CBE] hover:bg-blue-600 text-white p-2 rounded-md transition-colors">
             <Instagram size={15} />
           </a>
+         
+         <a href="https://www.google.com/maps/place/Doggos+Heaven/@28.3909843,76.9700345,17z/data=!3m1!4b1!4m6!3m5!1s0x390d3d003aac66ab:0x32a6dd785b4cbc4f!8m2!3d28.3909796!4d76.9726148!16s%2Fg%2F11vpqy4y_k?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" className="bg-[#489CBE] hover:bg-blue-600 text-white p-2 rounded-md transition-colors"><MapPin size={15} />
+</a>
          
         </div>
 

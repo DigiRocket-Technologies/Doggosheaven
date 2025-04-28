@@ -3,10 +3,10 @@ const Footer = () => {
     <footer className="bg-[#292929] text-gray-300 py-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row flex-wrap py-8 md:py-16 justify-between">
-          <div className="w-full md:w-[35%] px-4 mb-8 md:mb-0">
+          <div className="w-full md:w-[33%] px-4 mb-8 md:mb-0">
             <div className="flex items-center mb-4">
               <div className="">
-                <img src="logow.png" alt="Logo" className="h-12 md:h-15" />
+                <img src="./whitedoggo.png" alt="Logo" className="h-12 md:h-15" />
               </div>
             </div>
             <p className="text-sm mb-6">
@@ -79,7 +79,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <span>08448461071</span>
+                  <span>+91 84484 61071</span>
                 </li>
                 <li className="flex items-center">
                   <div className="text-yellow-500 mr-3">
